@@ -1,0 +1,71 @@
+html, 
+body {
+	/*height: 100%;
+	margin: 0;
+	padding: 0;*/
+  text-align: center;
+  background: #cce6ff;
+  font-family: 'Lato', sans-serif;
+}
+
+.address-input {
+  background-color: #f2f9ff;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 20em;
+  text-align: center;
+}
+
+
+form {
+  padding: 5px 0 0 0;
+}
+
+input {
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+#button {
+  font-size: 1em;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #f2f9ff inset;
+}
+
+#map {
+	height: 600px;
+	width: 800px;
+  margin: 1em auto;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.address-form {
+  padding-bottom: 1em;
+}
+
+.officials {
+  margin: 1em auto;
+}
+
+tbody {
+  background: #f2f9ff;
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.blank {
+  background: #cce6ff;
+  border: 1px solid #cce6ff;
+}
+
+td {
+  padding: 0.5em;
+}
