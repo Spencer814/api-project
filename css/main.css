@@ -70,3 +70,7 @@ td {
   padding: 0.5em;
   vertical-align: top;
 }
+
+.mid {
+  vertical-align: middle;
+}
