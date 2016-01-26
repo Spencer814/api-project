@@ -53,7 +53,7 @@ $(function() {
                       $.each(urls, function(index, url) {
                         var currentClass = "official_" + count;
                         if (index == 0) {
-                          $('.officials').append('<tr><td rowspan="2">' + official.office.title + '</td><td>' + official.first_name + ' ' + official.last_name + '</td><td rowspan="2">' + official.party + '</td></tr><tr class=\'' + currentClass + '\'><td><a href=' + url + ' target="_blank">' + url + '</a></td></tr>');
+                          $('.officials').append('<tr><td rowspan="2" class="mid">' + official.office.title + '</td><td>' + official.first_name + ' ' + official.last_name + '</td><td rowspan="2" class="mid">' + official.party + '</td></tr><tr class=\'' + currentClass + '\'><td><a href=' + url + ' target="_blank">' + url + '</a></td></tr>');
                         }
                         if (index > 0) {
                           $('.' + currentClass).after('<tr><td></td><td><a href=' + url + ' target="_blank">' + url + '</a></td><td></td></tr>');
