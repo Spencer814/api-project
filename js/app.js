@@ -31,7 +31,7 @@ $(function() {
         $('.status-text').text('Officials are loading...');
         var search_loc = $('.address-input').val();
         $.getJSON('http://cicero.azavea.com/v3.1/official?callback=?',
-            {token: '48t-be7d709ddcc3a59bbec4',
+            {token: '48v-789875a1a74a0ce38488',
              user: '1131',
              search_loc: search_loc },
             function(data) {
