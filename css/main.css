@@ -18,9 +18,7 @@ input {
   font-size: 15px;
 }
 
-.address-input/*,
-.senate-input,
-.house-input*/ {
+.address-input {
   background-color: #f2f9ff;
   border: 1px solid white;
   border-radius: 5px;
@@ -37,8 +35,8 @@ input:-webkit-autofill {
 }
 
 #map {
-	height: 600px;
-	width: 800px;
+  height: 600px;
+  width: 800px;
   margin: 1em auto;
   border-radius: 5px;
   border: 1px solid white;
@@ -52,8 +50,7 @@ form {
   padding-bottom: 2em;
 }
 
-.officials/*,
-.congress*/ {
+.officials {
   margin: 1em 15em;
 }
 
@@ -84,43 +81,3 @@ td {
 .mid {
   vertical-align: middle;
 }
-
-/*.congress {
-  width: 800px;
-  margin: 0 auto;
-}
-
-.senate {
-  padding: 0 1.5em 3em 1em;
-  float: left;
-}
-
-.house {
-  padding: 0 1em 3em 1.5em;
-  float: right;
-}
-
-.result {
-  background: #f2f9ff;
-  color: black;
-  border-radius: 5px;
-  border: 1px solid white;
-  padding: 0.5em;
-  margin-bottom: 3em;
-}
-
-.search-results {
-  padding: 1em;
-}
-
-.hidden {
-  display: none;
-}
-
-.error {
-  background-color: #F78181;
-  padding: 1em;
-  display: none;
-}
-
-*/
