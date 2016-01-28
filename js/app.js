@@ -27,6 +27,7 @@ function geocode () {
 
 
 $(function() {
+<<<<<<< HEAD
 
   // avoid passing timestamp param to Cicero and set handling for multiple-value params
   $('.address-form').submit(function(e) {
@@ -73,6 +74,35 @@ $(function() {
             count++;
           });
 
+=======
+    // avoid passing timestamp param to Cicero and set handling for multiple-value params
+    $.ajaxSetup({cache:true, traditional:true});
+    $('.address-form').submit(function() {
+        $('.officials').empty();
+        $('.status-text').text('Officials are loading...');
+        var search_loc = $('.address-input').val();
+        $.getJSON('http://cicero.azavea.com/v3.1/official?callback=?',
+            {token: '48v-789875a1a74a0ce38488',
+             user: '1131',
+             search_loc: search_loc },
+            function(data) {
+                if(data.response.results.candidates == 0) {
+                    $('.status-text').text('No results for ' + search_loc);
+                    return false;
+                }
+                $.each(data.response.results.candidates, function(index, location){
+                    $('.status-text').text('Showing the elected officials for ' + location.match_addr);
+                    $.each(location.officials, function(index, official){
+                        $('.officials').append('<tr><td rowspan="2">' + official.office.title + '</td><td>' + 
+                          official.first_name + ' ' + official.last_name + '</td><td rowspan="2">' + 
+                          official.party + '</td></tr><tr><td><a href=' + 
+                          official.urls + 'class="url">' + official.urls + '</a></td></tr><tr class="blank"><td colspan="3"></td></tr>');
+                        $('.url').click(function() {
+                          $.get($(this).attr('href'));
+                        });
+                    });
+                });
+>>>>>>> 8270942712684008e8a1515974fce7acc18e0e93
         });
       });
 
