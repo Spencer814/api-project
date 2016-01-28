@@ -1,11 +1,21 @@
-html, 
+html {
+  border: 15px solid #99cdff;
+  border-radius: 5px;
+}
+
 body {
-	/*height: 100%;
-	margin: 0;
-	padding: 0;*/
   text-align: center;
   background: #cce6ff;
   font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  margin-top: 2em;
+}
+
+input {
+  vertical-align: middle;
+  font-size: 15px;
 }
 
 .address-input {
@@ -14,16 +24,6 @@ body {
   border-radius: 5px;
   width: 20em;
   text-align: center;
-}
-
-
-form {
-  padding: 5px 0 0 0;
-}
-
-input {
-  vertical-align: middle;
-  font-size: 15px;
 }
 
 #button {
@@ -35,19 +35,23 @@ input:-webkit-autofill {
 }
 
 #map {
-	height: 600px;
-	width: 800px;
+  height: 600px;
+  width: 800px;
   margin: 1em auto;
   border-radius: 5px;
   border: 1px solid white;
 }
 
-.address-form {
-  padding-bottom: 1em;
+h2 {
+  padding-bottom: 0.5em;
+}
+
+form {
+  padding-bottom: 2em;
 }
 
 .officials {
-  margin: 1em auto;
+  margin: 1em 15em;
 }
 
 tbody {
@@ -58,12 +62,15 @@ tbody {
 table {
   border-collapse: collapse;
   border: 1px solid white;
-  border-radius: 5px;
 }
 
 .blank {
   background: #cce6ff;
   border: 1px solid #cce6ff;
+}
+
+p {
+  padding: 1em;
 }
 
 td {
