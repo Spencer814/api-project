@@ -40,10 +40,8 @@ $(function() {
     $('.status-text').text('Officials are loading...');
     var search_loc = $('.address-input').val();
 
-    $.getJSON('http://cicero.azavea.com/v3.1/official?callback=?',
-      {token: '48x-8c3595634fa34fa280af',
-      user: '1131',
-      search_loc: search_loc },
+    $.getJSON('https://cicero.azavea.com/v3.1/official?callback=?&key=ce574014a03bd35595a01c7c664b899196e676e5',
+      {search_loc: search_loc },
 
       function(data) {
         if(data.response.results.candidates == 0) {
