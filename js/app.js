@@ -10,7 +10,7 @@ var geocoder = new google.maps.Geocoder();
 
 function geocode () {
   geocoder.geocode({
-    'address': document.getElementById('search').value
+    'address': document.getElementById('street-address', 'city', 'state', 'zip').value
   },
 
   function(results, status) {
@@ -38,14 +38,14 @@ $(function() {
   $('.address-form').submit(function() {
     $('.officials').empty();
     $('.status-text').text('Officials are loading...');
-    var search_loc = $('.address-input').val();
+    var search_loc = $('#street-address').val() + " " + $('#city').val() + " " + $('#state').val() + " " + $('#zip').val();
 
     $.getJSON('https://cicero.azavea.com/v3.1/official?callback=?&key=ce574014a03bd35595a01c7c664b899196e676e5',
       {search_loc: search_loc },
 
       function(data) {
         if(data.response.results.candidates == 0) {
-          $('.status-text').text('No results for ' + search_loc);
+          $('.status-text').text('No results for ' + search_loc + '-  Please enter a new address');
           return false;
         }
 
