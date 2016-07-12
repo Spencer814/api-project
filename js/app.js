@@ -40,7 +40,7 @@ $(function() {
     $('.status-text').text('Officials are loading...');
     var search_loc = $('#street-address').val() + " " + $('#city').val() + " " + $('#state').val() + " " + $('#zip').val();
 
-    $.getJSON('https://cicero.azavea.com/v3.1/official?callback=?&key=ce574014a03bd35595a01c7c664b899196e676e5',
+    $.getJSON('https://cicero.azavea.com/v3.1/official?callback=?&key=c3f802b8affcebab0f0c60fb713b76c16373ca80',
       {search_loc: search_loc },
 
       function(data) {
