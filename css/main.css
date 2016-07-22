@@ -1,18 +1,9 @@
 html {
-<<<<<<< HEAD
   border-radius: 5px;
   border: 15px solid #99cdff;
   min-height: 100%;
 }
 body {
-=======
-  border: 15px solid #99cdff;
-  border-radius: 5px;
-}
-
-body {
-  text-align: center;
->>>>>>> gh-pages
   background: #cce6ff;
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -27,7 +18,6 @@ input {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #f2f9ff inset;
 }
-<<<<<<< HEAD
 .address-input {
   background-color: #f2f9ff;
   border-radius: 5px;
@@ -37,11 +27,6 @@ input:-webkit-autofill {
 }
 #street-address {
   width: 1 5em;
-=======
-
-h1 {
-  margin-top: 2em;
->>>>>>> gh-pages
 }
 #city {
   width: 10em;
@@ -52,20 +37,6 @@ h1 {
 #zip {
   width: 5em;
 }
-<<<<<<< HEAD
-=======
-
-.address-input/*,
-.senate-input,
-.house-input*/ {
-  background-color: #f2f9ff;
-  border: 1px solid white;
-  border-radius: 5px;
-  width: 20em;
-  text-align: center;
-}
-
->>>>>>> gh-pages
 #button {
   font-size: 1em;
 }
@@ -79,26 +50,11 @@ h1 {
 h2 {
   padding-bottom: 0.5em;
 }
-<<<<<<< HEAD
 form {
   padding-bottom: 2em;
 }
 .officials {
   margin: 1em auto;
-=======
-
-h2 {
-  padding-bottom: 0.5em;
-}
-
-form {
-  padding-bottom: 2em;
-}
-
-.officials/*,
-.congress*/ {
-  margin: 1em 15em;
->>>>>>> gh-pages
 }
 table {
   border-collapse: collapse;
@@ -108,73 +64,18 @@ table {
   background: #cce6ff;
   border: 1px solid #cce6ff;
 }
-<<<<<<< HEAD
 p {
   padding: 1em;
 }
-=======
-
-p {
-  padding: 1em;
-}
-
->>>>>>> gh-pages
 td {
   background: #f2f9ff;
   color: black;
   padding: 0.5em;
   vertical-align: top;
 }
-<<<<<<< HEAD
 .gap {
   background: #cce6ff;
 }
 .mid {
   vertical-align: middle;
 }
-=======
-
-.mid {
-  vertical-align: middle;
-}
-
-/*.congress {
-  width: 800px;
-  margin: 0 auto;
-}
-
-.senate {
-  padding: 0 1.5em 3em 1em;
-  float: left;
-}
-
-.house {
-  padding: 0 1em 3em 1.5em;
-  float: right;
-}
-
-.result {
-  background: #f2f9ff;
-  color: black;
-  border-radius: 5px;
-  border: 1px solid white;
-  padding: 0.5em;
-  margin-bottom: 3em;
-}
-
-.search-results {
-  padding: 1em;
-}
-
-.hidden {
-  display: none;
-}
-
-.error {
-  background-color: #F78181;
-  padding: 1em;
-  display: none;
-}
-
-*/
->>>>>>> gh-pages
