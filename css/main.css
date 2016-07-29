@@ -16,33 +16,32 @@ input {
   vertical-align: middle;
 }
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px #f2f9ff inset;
+  -webkit-box-shadow: 0 0 0 1000px #f2f9ff inset;
 }
 .address-input {
   background-color: #f2f9ff;
   border-radius: 5px;
-  border: 1px solid white;
-  margin: 0 0.1em;
+  border: 1px solid #ffffff;
+  margin: 0 4px;
+  padding: 2px 4px;
   text-align: center;
 }
-#street-address {
-  width: 1 5em;
+.street {
+  width: 15em;
 }
-#city {
+.zip {
+  width: 5em;
+}
+.state,
+.city {
   width: 10em;
 }
-#state {
-  width: 5em;
-}
-#zip {
-  width: 5em;
-}
-#button {
+.submit {
   font-size: 1em;
 }
-#map {
+.map {
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   height: 600px;
   margin: 1em auto;
   width: 800px;
@@ -53,12 +52,37 @@ h2 {
 form {
   padding-bottom: 2em;
 }
+.button {
+  display: inline-block;
+  padding: 0.2em 1em;
+  margin: 0 0.5em;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #a3ccff;
+  border: 1px groove #357ed8;
+  border-radius: 8px;
+  box-shadow: 0 5px #999999;
+}
+.button:hover {
+  background-color: #357ed8;
+  border: 1px groove #a3ccff;
+}
+.button:active {
+  background-color: #357ed8;
+  border: 1px groove #a3ccff;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
 .officials {
   margin: 1em auto;
 }
 table {
   border-collapse: collapse;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
 }
 .blank {
   background: #cce6ff;
@@ -67,11 +91,16 @@ table {
 p {
   padding: 1em;
 }
-td {
+td,
+a {
   background: #f2f9ff;
-  color: black;
+  color: #000000;
   padding: 0.5em;
+  text-decoration: none;
   vertical-align: top;
+}
+a:hover {
+  text-shadow: 2px 2px 8px #000000;
 }
 .gap {
   background: #cce6ff;
