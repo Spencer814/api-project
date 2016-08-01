@@ -67,6 +67,13 @@ var map = new google.maps.Map(document.getElementById('map'), {
   zoom:4,
 });
 
+google.maps.event.addDomListener(window, 'resize', function() {
+  var center = map.getCenter();
+  google.maps.event.trigger(map, 'resize');
+  map.setCenter(center);
+});
+
+
 var geocoder = new google.maps.Geocoder();
 
 function geocode () {
@@ -117,10 +124,10 @@ $(function() {
             $.each(urls, function(index, url) {
               var currentClass = 'official_' + count;
               if (index == 0) {
-                $('.officials').append('<tr><td rowspan="2" class="mid">' + official.office.title + '</td><td><a href=' + url + ' target="_blank">' + official.first_name + ' ' + official.last_name + '</a></td><td rowspan="2" class="mid">' + official.party + '</td></tr><tr class=\'' + currentClass + '\'><td><a href=' + url + ' target="_blank">' + url + '</a></td></tr>');
+                $('.officials').append('<tr><td rowspan="2" class="mid">' + official.office.title + '</td><td><a href=' + url + ' target="_blank">' + official.first_name + ' ' + official.last_name + '</a></td><td rowspan="2" class="mid">' + official.party + '</td></tr><tr class=\'' + currentClass + '\'><td class="primary"><a href=' + url + ' target="_blank">' + url + '</a></td></tr>');
               }
               if (index > 0) {
-                $('.' + currentClass).after('<tr><td></td><td><a href=' + url + ' target="_blank">' + url + '</a></td><td></td></tr>');
+                $('.' + currentClass).after('<tr><td class="link"></td><td class="link"><a href=' + url + ' target="_blank">' + url + '</a></td><td class="link"></td></tr>');
               }
               if (urls.length == index + 1) {
                 $('.officials').append('<tr class="blank"><td colspan="3" class="gap"></td></tr>');
